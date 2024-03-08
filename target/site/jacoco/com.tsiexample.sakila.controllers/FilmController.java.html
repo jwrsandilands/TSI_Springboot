@@ -5,60 +5,62 @@ import com.tsiexample.sakila.entities.partial.PartialActor;
 import com.tsiexample.sakila.input.FilmInput;
 import com.tsiexample.sakila.services.FilmService;
 import com.tsiexample.sakila.services.abstraction.IFilmService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-<span class="nc" id="L14">public class FilmController {</span>
+<span class="fc" id="L15">@AllArgsConstructor</span>
+public class FilmController {
 
     @Autowired
     IFilmService filmService;
 
     @GetMapping(&quot;/films&quot;)
     public List&lt;Film&gt; listFilms(){
-<span class="nc" id="L21">        return filmService.getFilms();</span>
+<span class="nc" id="L23">        return filmService.getFilms();</span>
     }
 
     @GetMapping(&quot;/films/{id}&quot;)
     public Film getFilmById(@PathVariable Short id){
-<span class="nc" id="L26">        return filmService.getFilmById(id);</span>
+<span class="fc" id="L28">        return filmService.getFilmById(id);</span>
     }
 
     @GetMapping(&quot;/films/{id}/cast&quot;)
     public List&lt;PartialActor&gt; getCastByFilmId(@PathVariable Short id){
-<span class="nc" id="L31">        return filmService.getCastByFilmId(id);</span>
+<span class="nc" id="L33">        return filmService.getCastByFilmId(id);</span>
     }
 
     @GetMapping(&quot;/films/title/{filmTitle}&quot;)
     public List&lt;Film&gt; getFilmsByTitle(@PathVariable String filmTitle){
-<span class="nc" id="L36">        return filmService.getFilmsByTitle(filmTitle);</span>
+<span class="nc" id="L38">        return filmService.getFilmsByTitle(filmTitle);</span>
     }
 
     @PostMapping(&quot;/films&quot;)
     public Film createFilm(@RequestBody FilmInput inputData){
-<span class="nc" id="L41">        return filmService.createFilm(inputData);</span>
+<span class="nc" id="L43">        return filmService.createFilm(inputData);</span>
     }
 
     @PatchMapping(&quot;/films/{id}&quot;)
     public Film updateFilm(@PathVariable Short id, @RequestBody FilmInput inputData){
-<span class="nc" id="L46">        return filmService.updateFilm(id, inputData);</span>
+<span class="nc" id="L48">        return filmService.updateFilm(id, inputData);</span>
     }
 
     @PatchMapping(&quot;/films/{id}/cast/add&quot;)
     public Film addActorsToFilm(@PathVariable Short id, @RequestBody FilmInput inputData) {
-<span class="nc" id="L51">        return filmService.addActorsToFilm(id, inputData);</span>
+<span class="nc" id="L53">        return filmService.addActorsToFilm(id, inputData);</span>
     }
 
     @PatchMapping(&quot;/films/{id}/cast/remove&quot;)
     public Film removeActorsFromFilm(@PathVariable Short id, @RequestBody FilmInput inputData) {
-<span class="nc" id="L56">        return filmService.removeActorsFromFilm(id, inputData);</span>
+<span class="nc" id="L58">        return filmService.removeActorsFromFilm(id, inputData);</span>
     }
 
     @DeleteMapping(&quot;/films/{id}&quot;)
     public HttpStatus deleteFilm(@PathVariable Short id){
-<span class="nc" id="L61">         return filmService.deleteFilm(id);</span>
+<span class="nc" id="L63">         return filmService.deleteFilm(id);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

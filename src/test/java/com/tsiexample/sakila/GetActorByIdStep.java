@@ -13,7 +13,7 @@ import java.util.Date;
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
 
-public class ActorControllerStep {
+public class GetActorByIdStep {
     private ActorService mockActorService;
     private final Short expectedId = 1;
     private final Actor expectedActor = new Actor(

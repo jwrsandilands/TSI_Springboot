@@ -5,12 +5,14 @@ import com.tsiexample.sakila.entities.partial.PartialActor;
 import com.tsiexample.sakila.input.FilmInput;
 import com.tsiexample.sakila.services.FilmService;
 import com.tsiexample.sakila.services.abstraction.IFilmService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@AllArgsConstructor
 public class FilmController {
 
     @Autowired

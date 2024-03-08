@@ -76,6 +76,26 @@ public class Film {
     public Film(){
     }
 
+    public Film(Short id, String title, String description,
+                Year releaseYear, byte languageId, byte originalLanguageId,
+                byte rentalDuration, BigDecimal rentalRate, short length,
+                Float replacementCost, String rating, String specialFeatures,
+                Date lastUpdate) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.releaseYear = releaseYear;
+        this.languageId = languageId;
+        this.originalLanguageId = originalLanguageId;
+        this.rentalDuration = rentalDuration;
+        this.rentalRate = rentalRate;
+        this.length = length;
+        this.replacementCost = replacementCost;
+        this.rating = rating;
+        this.specialFeatures = specialFeatures;
+        this.lastUpdate = lastUpdate;
+    }
+
     public PartialFilm toPartial(){
         return new PartialFilm(
                 id,
