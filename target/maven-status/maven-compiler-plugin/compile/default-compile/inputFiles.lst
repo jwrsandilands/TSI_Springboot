@@ -1,0 +1,15 @@
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\input\FilmInput.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\input\ActorInput.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\entities\partial\PartialFilm.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\services\abstraction\IFilmService.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\SakilaApplication.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\controllers\FilmController.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\entities\Actor.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\repositories\FilmRepository.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\services\FilmService.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\controllers\ActorController.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\repositories\ActorRepository.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\services\abstraction\IActorService.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\entities\Film.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\entities\partial\PartialActor.java
+C:\Users\icek0\Documents\GitHub\TSI_Springboot\sakila\src\main\java\com\tsiexample\sakila\services\ActorService.java

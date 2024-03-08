@@ -1,0 +1,15 @@
+com\tsiexample\sakila\input\ActorInput.class
+com\tsiexample\sakila\services\abstraction\IActorService.class
+com\tsiexample\sakila\entities\partial\PartialActor.class
+com\tsiexample\sakila\repositories\ActorRepository.class
+com\tsiexample\sakila\controllers\ActorController.class
+com\tsiexample\sakila\services\abstraction\IFilmService.class
+com\tsiexample\sakila\controllers\FilmController.class
+com\tsiexample\sakila\SakilaApplication.class
+com\tsiexample\sakila\repositories\FilmRepository.class
+com\tsiexample\sakila\services\FilmService.class
+com\tsiexample\sakila\input\FilmInput.class
+com\tsiexample\sakila\entities\partial\PartialFilm.class
+com\tsiexample\sakila\entities\Actor.class
+com\tsiexample\sakila\services\ActorService.class
+com\tsiexample\sakila\entities\Film.class

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PartialFilm.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">sakila</a> &gt; <a href="index.source.html" class="el_package">com.tsiexample.sakila.entities.partial</a> &gt; <span class="el_source">PartialFilm.java</span></div><h1>PartialFilm.java</h1><pre class="source lang-java linenums">package com.tsiexample.sakila.entities.partial;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+import java.time.Year;
+import java.util.Date;
+
+@Entity
+@Table(name = &quot;film&quot;)
+@Getter
+<span class="nc" id="L15">@Setter</span>
+public class PartialFilm {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = &quot;film_id&quot;)
+<span class="nc" id="L20">    private Short id;</span>
+
+    @Column(name = &quot;title&quot;)
+<span class="nc" id="L23">    private String title;</span>
+
+    @Column(name = &quot;description&quot;)
+<span class="nc" id="L26">    private String description;</span>
+
+    @Column(name = &quot;release_year&quot;)
+<span class="nc" id="L29">    private Year releaseYear;</span>
+
+    @Column(name = &quot;language_id&quot;)
+    @JsonIgnore
+<span class="nc" id="L33">    private Byte languageId;</span>
+
+    @Column(name = &quot;original_language_id&quot;)
+    @JsonIgnore
+<span class="nc" id="L37">    private Byte originalLanguageId;</span>
+
+    @Column(name = &quot;rental_duration&quot;)
+    @JsonIgnore
+<span class="nc" id="L41">    private Byte rentalDuration;</span>
+
+    @Column(name = &quot;rental_rate&quot;)
+    @JsonIgnore
+<span class="nc" id="L45">    private BigDecimal rentalRate;</span>
+
+    @Column(name = &quot;length&quot;)
+    @JsonIgnore
+<span class="nc" id="L49">    private Short length;</span>
+
+    @Column(name = &quot;replacement_cost&quot;)
+    @JsonIgnore
+<span class="nc" id="L53">    private Float replacementCost;</span>
+
+    @Column(name = &quot;rating&quot;)
+    @JsonIgnore
+<span class="nc" id="L57">    private String rating;</span>
+
+    @Column(name = &quot;special_features&quot;)
+    @JsonIgnore
+<span class="nc" id="L61">    private String specialFeatures;</span>
+
+    @Column(name = &quot;last_update&quot;)
+<span class="nc" id="L64">    private Date lastUpdate;</span>
+
+<span class="nc" id="L66">    public PartialFilm(){</span>
+
+<span class="nc" id="L68">    }</span>
+
+    public PartialFilm(Short id, String title, String description, Year releaseYear,
+                       Byte languageId, Byte originalLanguageId, Byte rentalDuration, BigDecimal rentalRate,
+                       Short length, Float replacementCost, String rating, String specialFeatures,
+<span class="nc" id="L73">                       Date lastUpdate){</span>
+<span class="nc" id="L74">        this.id = id;</span>
+<span class="nc" id="L75">        this.title = title;</span>
+<span class="nc" id="L76">        this.description = description;</span>
+<span class="nc" id="L77">        this.releaseYear = releaseYear;</span>
+<span class="nc" id="L78">        this.languageId = languageId;</span>
+<span class="nc" id="L79">        this.originalLanguageId = originalLanguageId;</span>
+<span class="nc" id="L80">        this.rentalDuration = rentalDuration;</span>
+<span class="nc" id="L81">        this.rentalRate = rentalRate;</span>
+<span class="nc" id="L82">        this.length = length;</span>
+<span class="nc" id="L83">        this.replacementCost = replacementCost;</span>
+<span class="nc" id="L84">        this.rating = rating;</span>
+<span class="nc" id="L85">        this.specialFeatures = specialFeatures;</span>
+<span class="nc" id="L86">        this.lastUpdate = lastUpdate;</span>
+<span class="nc" id="L87">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
