@@ -1,6 +1,6 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-sakila,com.tsiexample.sakila.input,ActorInput,156,0,30,0,4,0,26,0,11,0
-sakila,com.tsiexample.sakila.input,FilmInput,317,0,62,0,8,0,50,0,19,0
+sakila,com.tsiexample.sakila.input,ActorInput,153,12,30,0,4,1,25,1,10,1
+sakila,com.tsiexample.sakila.input,FilmInput,338,0,62,0,9,0,50,0,19,0
 sakila,com.tsiexample.sakila,SakilaApplication,8,0,0,0,3,0,2,0,2,0
 sakila,com.tsiexample.sakila.entities.partial,PartialActor,46,0,0,0,13,0,10,0,10,0
 sakila,com.tsiexample.sakila.entities.partial,PartialFilm,136,0,0,0,31,0,28,0,28,0
@@ -9,4 +9,4 @@ sakila,com.tsiexample.sakila.entities,Film,123,60,0,0,15,19,26,4,26,4
 sakila,com.tsiexample.sakila.services,FilmService,299,0,24,0,58,0,30,0,18,0
 sakila,com.tsiexample.sakila.services,ActorService,264,0,14,0,46,0,27,0,20,0
 sakila,com.tsiexample.sakila.controllers,FilmController,42,11,0,0,8,2,8,2,8,2
-sakila,com.tsiexample.sakila.controllers,ActorController,48,11,0,0,10,2,9,2,9,2
+sakila,com.tsiexample.sakila.controllers,ActorController,43,16,0,0,9,3,8,3,8,3

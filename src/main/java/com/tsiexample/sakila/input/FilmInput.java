@@ -1,6 +1,7 @@
 package com.tsiexample.sakila.input;
 
 import jakarta.persistence.Column;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -8,6 +9,7 @@ import java.time.Year;
 import java.util.List;
 
 @Data
+@AllArgsConstructor
 public class FilmInput {
     private String title;
     private String description;
