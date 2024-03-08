@@ -1,10 +1,7 @@
 package com.tsiexample.sakila;
 
-import com.tsiexample.sakila.controllers.ActorController;
 import com.tsiexample.sakila.controllers.FilmController;
-import com.tsiexample.sakila.entities.Actor;
 import com.tsiexample.sakila.entities.Film;
-import com.tsiexample.sakila.services.ActorService;
 import com.tsiexample.sakila.services.FilmService;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -46,7 +43,7 @@ public class GetFilmByIdStep {
     }
 
     @Given("Film with id {short} exists")
-    public void givenActorWithIdExists(Short id){
+    public void givenFilmWithIdExists(Short id){
         doReturn(expectedFilm).when(mockFilmService).getFilmById(id);
     }
 
@@ -62,7 +59,7 @@ public class GetFilmByIdStep {
     }
 
     @Then("a Film is returned")
-    public void thenActorReturned(){
+    public void thenFilmReturned(){
         assertNotNull(returnedFilm);
         assertEquals(expectedId, returnedFilm.getId());
         assertEquals(expectedFilm.getTitle(), returnedFilm.getTitle());
